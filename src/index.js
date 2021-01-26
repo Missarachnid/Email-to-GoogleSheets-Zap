@@ -4,28 +4,13 @@ import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import store from './store/createStore';
 
-const initialState = createStore(() => ({
-  formData : {
-    firstNameInput: '',
-    lastNameInput: '',
-    userNameInput: '',
-    emailInput: '',
-    commentInput: '',
-    sendData: {
-      firstName: '',
-      lastName: '',
-      userName: '',
-      email: '',
-      comment: ''
-    }
-  }
-}));
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={initialState}>
+    <Provider store={store}>
       <App />
     </Provider>
   </React.StrictMode>,
