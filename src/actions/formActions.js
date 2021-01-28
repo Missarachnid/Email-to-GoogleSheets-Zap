@@ -4,3 +4,4 @@ export const USERNAME_INPUT = {type: 'USERNAME_INPUT'};
 export const EMAIL_INPUT = {type: 'EMAIL_INPUT'};
 export const COMMENT_INPUT = {type: 'COMMENT_INPUT'};
 export const SUBMIT = {type: 'SUBMIT'};
+export const CLEAR = {type: 'CLEAR'};
