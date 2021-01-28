@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/App.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { StyledForm } from './styles/styledForm';
+import axios from 'axios';
 //actions
 import {
   FIRST_NAME_INPUT,
@@ -26,7 +27,23 @@ console.log('change check', firstname);
 const clickSubmit = (e) => {
   e.preventDefault();
   console.log('inSubmit');
+  //clears the form on submit
   dispatch({type: CLEAR});
+  //sends form data to API
+  const formData = {
+    firstname: firstname,
+    lastname: lastname,
+    username: username,
+    email: email,
+    comment: comment
+  };
+  axios.post('/submit', formData)
+  .then(() => {
+    console.log('submit worked')
+  })
+  .catch((err) => {
+    console.log('submit err', err);
+  });
 }
   return (
     <StyledForm>
