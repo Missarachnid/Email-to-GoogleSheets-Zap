@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f2f2f2;
+  min-width: 100vw;
+  min-height: 100vh;
+  color: black;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+}
