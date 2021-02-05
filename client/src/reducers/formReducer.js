@@ -5,7 +5,9 @@ import {
   EMAIL_INPUT,
   COMMENT_INPUT,
   SUBMIT,
-  CLEAR
+  CLEAR,
+  AUTH_TOGGLE,
+  PW_UPDATE
 } from '../actions/formActions';
 import initialState from './initialState';
 
@@ -54,6 +56,18 @@ const formReducer = (state = initialState, action) => {
     case SUBMIT: {
       return {
         ...state
+      }
+    }
+    case PW_UPDATE: {
+      return {
+        ...state,
+        pwInput: action.payload
+      }
+    }
+    case AUTH_TOGGLE : {
+      return {
+        ...state,
+        isAuthenticated: !state.isAuthent
       }
     }
     default : {

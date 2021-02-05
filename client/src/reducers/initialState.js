@@ -4,5 +4,7 @@ const initialState =  {
     userNameInput: '',
     emailInput: '',
     commentInput: '',
+    isAuthenticated: false,
+    pwInput: ''
   };
 export default initialState;

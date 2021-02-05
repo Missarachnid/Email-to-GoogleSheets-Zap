@@ -5,3 +5,5 @@ export const EMAIL_INPUT = {type: 'EMAIL_INPUT'};
 export const COMMENT_INPUT = {type: 'COMMENT_INPUT'};
 export const SUBMIT = {type: 'SUBMIT'};
 export const CLEAR = {type: 'CLEAR'};
+export const AUTH_TOGGLE = {type: 'AUTH_TOGGLE'};
+export const PW_UPDATE = {type: 'PW_UPDATE'};
