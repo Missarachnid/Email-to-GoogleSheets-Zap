@@ -3,6 +3,8 @@ import '../css/App.css';
 import ProtectedRoute from './ProtectedRoute';
 import Form from './Form';
 import Home from './Home';
+import Success from './Success';
+import Failure from './Failue';
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,6 +24,8 @@ function App() {
         <Switch>
           <Route exact path='/' component={Home} />
           <ProtectedRoute exact path='/form' component={Form} />
+          <ProtectedRoute exact path='/success' component={Success} />
+          <ProtectedRoute exact path='/failure' component={Failure} />
         </Switch>
       </Router>
     </div>
