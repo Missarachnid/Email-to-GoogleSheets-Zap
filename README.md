@@ -1,6 +1,7 @@
 #  Zapier Zap sends form data to Google Sheet
 
-##  [The project can be seen here](https://kepler-zap.herokuapp.com/)
+##  The password is Happier
+##  [The project can be seen here](https://brave-curie-83cf49.netlify.app)
 
 ###  Technology Used:
 *  React/Redux/Hooks

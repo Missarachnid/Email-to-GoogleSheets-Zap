@@ -28,7 +28,7 @@ const Home = () => {
 
   return (
     <StyledForm>
-      <h1>To use this project and view Zap results,<br/>you must enter a code from my resume.</h1>
+      <h1>To use this project and view Zap results,<br/>you must enter a code from the project's GitHub Repository.</h1>
       <div>
         <form id='zap-form'
           onSubmit={e => clickSubmit(e)}
